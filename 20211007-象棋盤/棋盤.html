@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .container {
+      width: 530px;
+      height: 580px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    tr {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+    }
+
+    td {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+    }
+
+    .TextCenter {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: "標楷體";
+      font-size: 35px;
+    }
+
+    h1 {
+      font-family: "標楷體";
+      font-size: 30px;
+      -webkit-writing-mode: vertical-1r;
+      writing-mode: vertical-lr;
+    }
+
+    .l45 {
+      background: linear-gradient(45deg, white 50%, #000 50%, black 51%, white 51%);
+    }
+
+    .r45 {
+      background: linear-gradient(-45deg, white 50%, #000 50%, black 51%, white 51%);
+    }
+
+    .b {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "標楷體";
+      font-size: 28px;
+      background: white;
+    }
+
+    #block1 {
+      width: 480px;
+      height: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 25px;
+    }
+
+    #block2 {
+      width: 365px;
+      height: 250px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 25px;
+    }
+
+    #block3 {
+      width: 480px;
+      height: 205px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 25px;
+    }
+
+    .r {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "標楷體";
+      font-size: 28px;
+      background: white;
+      color: red;
+    }
+
+    #red1 {
+      width: 480px;
+      height: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    #red2 {
+      width: 365px;
+      height: 250px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    #red3 {
+      width: 480px;
+      height: 205px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>棋盤裡，車無輪，馬無韁，叫聲將軍提防提防</h1>
+  <div class="container">
+    <table>
+      <div id="block1">
+        <div class="b">車</div>
+        <div class="b">馬</div>
+        <div class="b">象</div>
+        <div class="b">士</div>
+        <div class="b">將</div>
+        <div class="b">士</div>
+        <div class="b">象</div>
+        <div class="b">馬</div>
+        <div class="b">車</div>
+      </div>
+      <div id="block2">
+        <div class="b">包</div>
+        <div class="b">包</div>
+      </div>
+      <div id="block3">
+        <div class="b">卒</div>
+        <div class="b">卒</div>
+        <div class="b">卒</div>
+        <div class="b">卒</div>
+        <div class="b">卒</div>
+      </div>
+      <div id="red1">
+        <div class="r">俥</div>
+        <div class="r">傌</div>
+        <div class="r">相</div>
+        <div class="r">仕</div>
+        <div class="r">帥</div>
+        <div class="r">仕</div>
+        <div class="r">相</div>
+        <div class="r">傌</div>
+        <div class="r">俥</div>
+      </div>
+      <div id="red2">
+        <div class="r">炮</div>
+        <div class="r">炮</div>
+      </div>
+      <div id="red3">
+        <div class="r">兵</div>
+        <div class="r">兵</div>
+        <div class="r">兵</div>
+        <div class="r">兵</div>
+        <div class="r">兵</div>
+      </div>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="l45"></td>
+        <td class="r45"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="r45"></td>
+        <td class="l45"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="8">
+          <div class="TextCenter"><span>楚河</span><span>漢界</span></div>
+
+        </td>
+      </tr>
+      <div id="red">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="l45"></td>
+          <td class="r45"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="r45"></td>
+          <td class="l45"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </div>
+    </table>
+  </div>
+  <h1>圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</h1>
+</body>
+
+</html>
